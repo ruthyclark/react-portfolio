@@ -10,7 +10,7 @@ h5 {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, paleturquoise, turquoise, mediumturquoise, darkturquoise);
+  background-image: linear-gradient(to right, paleturquoise, turquoise, darkturquoise);
   color: white;
 }
 
@@ -20,5 +20,39 @@ h5 {
 
 .navbar-dark {
   background-color: steelblue;
+}
+
+.site-footer {
+  background-image: linear-gradient(darkturquoise, paleturquoise);
+  padding: 20px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-paragraph {
+  margin-left: 5%;
+}
+
+.selfie {
+  height: 350px;
+  margin-right: 5%;
+}
+
+.selfie {
+  margin-bottom: 5%;
+}
+
+.circular--square {
+  border-radius: 50%;
+}
+
+.background {
+  width:100%;
+  height:auto;
+  padding: 20px;
 }
 
