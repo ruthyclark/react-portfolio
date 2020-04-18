@@ -1,16 +1,18 @@
 
 body {
-      font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: steelblue;
 }
 
-h5 {
-    font-family: "Lobster", cursive;
+h2 {
+  font-family: "Lobster", cursive;
 }
 
+/* Header Component */
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, paleturquoise, turquoise, darkturquoise);
+  background-image: linear-gradient(to right, white, paleturquoise, turquoise, darkturquoise);
   color: white;
 }
 
@@ -21,38 +23,127 @@ h5 {
 .navbar-dark {
   background-color: steelblue;
 }
+/* Header Component */
 
+/* Footer Component */
 .site-footer {
-  background-image: linear-gradient(darkturquoise, paleturquoise);
+  background-image: linear-gradient(darkturquoise, paleturquoise, white);
   padding: 20px 0;
+}
+
+.site-footer .btn {
+    margin: 0 5px;
+}
+/* Footer Component */
+
+/* Home Component */
+.background {
+  width:100%;
+  height:auto;
+  padding: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+} 
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+
+}
+.description{
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;  
+}
+.description h1{
+color:darkturquoise ;
+}
+.description p{
+color:#666;
+font-size: 20px;
+width: 50%;
+line-height: 1.5;
+}
+.description button{
+border:1px  solid darkturquoise;
+background: darkturquoise;
+color:#fff;
+}
+/* Home Component */
+
+/* About Component */
+.about-main {
+  padding: 30px;
 }
 
 .about-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .about-paragraph {
-  margin-left: 5%;
+  margin-left: 10%;
+}
+
+.page-title {
+  margin-left: 10%;
 }
 
 .selfie {
   height: 350px;
   margin-right: 5%;
-}
-
-.selfie {
   margin-bottom: 5%;
 }
 
 .circular--square {
   border-radius: 50%;
 }
+/* About Component */
 
-.background {
-  width:100%;
-  height:auto;
-  padding: 20px;
+/* Contact Component */
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+/* Contact Component */
+
+/* Animations */
+.page-enter {
+  opacity: 0;
 }
 
+.page-enter-active {
+  opacity: 1;
+  transition: 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-out;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
+}
+/* Animations */

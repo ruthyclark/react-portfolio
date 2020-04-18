@@ -7,7 +7,7 @@ class Footer extends Component {
             <footer className="site-footer">
                 <div className="container">
                     <div className="row">            
-                        <div className="col-6 col-sm-3 text-center">
+                        <div className="col text-center">
                             <a className= "btn btn-social-icon btn-linkedin" href="https://www.linkedin.com">
                                 <i className="fa fa-linkedin"></i></a>
                             <a className= "btn btn-social-icon btn-github" href="https://github.com"> 
